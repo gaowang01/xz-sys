@@ -15,4 +15,4 @@ require('./routes.js')(app);
 
 app.listen(8080,function(){
 	console.log('✨ app start at port 8080 ✨');
-})
+});
