@@ -1,0 +1,18 @@
+{
+  "name": "xz-sys",
+  "version": "1.0.0",
+  "description": "xz system for other business",
+  "main": "main.js",
+  "scripts": {
+    "test":"nodemon main.js & sass --watch ./public/sass:./public/style --sourcemap=none",
+  },
+  "author": "mofanjun",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

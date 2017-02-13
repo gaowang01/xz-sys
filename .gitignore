@@ -1,0 +1,4 @@
+#ignore package from npm
+node_modules
+#ignore sass cache folder
+.sass-cache 
