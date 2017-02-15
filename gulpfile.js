@@ -19,9 +19,17 @@ gulp.task('lint',function(){
 		.pipe(jshint.reporter('jshint-stylish'));
 });
 
-//mocha
-gulp.task('mocha',function(){
-	return gulp.src('./qa/qa-mocha.test.js',{read:false})
+/*****************************************************
+***mocha
+*******************************************************/
+//TDD
+gulp.task('TDD',function(){
+	return gulp.src('./qa/TDD.js',{read:false})
 		.pipe(mocha({reporter:'spec'}));
+})
+
+gulp.task('BDD',function(){
+	return gulp.src('./qa/BDD.js',{read:false})
+		.pipe(mocha({reporter:'spec',timeout:100000}));
 })
 
