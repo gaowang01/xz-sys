@@ -4,7 +4,15 @@ var app = express();
 
 //view engine
 var exphbs = require('express-handlebars');
-app.engine('handlebars',exphbs({defaultLayout:'layout'}));
+var hbs = exphbs.create({
+	defaultLayout:'layout',
+	partialsDir: [
+        'views/shared/',    //#reuse partials
+        'views/partials/' //# page partials
+    ],
+    helpers:{}
+});
+app.engine('handlebars',hbs.engine);
 app.set('view engine','handlebars');
 
 //res dir
