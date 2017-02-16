@@ -4,7 +4,8 @@
   "description": "xz system for other business",
   "main": "main.js",
   "scripts": {
-    "test": "nodemon main.js & sass --watch ./public/sass:./public/style --sourcemap=none"
+    "test": "nodemon main.js & sass --watch ./public/sass:./public/style --sourcemap=none",
+    "start": "nodemon main.js"
   },
   "author": "mofanjun",
   "license": "ISC",
