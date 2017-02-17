@@ -1,20 +1,93 @@
+/*header样式*/
 header {
   height: 64px;
-  background-color: red; }
+  background-color: gainsboro;
+}
 
+header .header-1{
+  width: 100%;
+  height: 62px;
+}
 header .logo {
+  height: 62px;
+  font-size: 20px;
+  line-height: 62px;
+  padding-left: 20px;
   float: left;
 }
 
+header .header-right{
+  height: 62px;
+  float: right;
+}
+
+header ul{
+  list-style: none;
+}
+
+header li{
+  display: inline-block;
+}
+
+header li img{
+  margin: 0 10px;
+}
+header .header-2{
+  width: 100%;
+  height: 2px;
+  background: -webkit-linear-gradient(left,#268bcb,#2bf3d9);
+  background: -o-linear-gradient(right,#268bcb,#2bf3d9);
+  background: -moz-linear-gradient(right,#268bcb,#2bf3d9);
+  background: linear-gradient(to right,#268bcb,#2bf3d9);
+}
+
+/*nav样式*/
 nav {
   width: 358px;
   float: left;
-  background-color: green; }
+}
   nav .profile {
     width: 100%;
     height: 120px;
-    background-color: yellow; }
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    background-color: gainsboro;
+}
+  nav .nav-list{
+    width: 100%;
+  }
+  nav .function-left{
+    height: 100%;
+    width: 50%;
+    background: -webkit-linear-gradient(left,#3d4549,#39535f);
+    background: -o-linear-gradient(right,#3d4549,#39535f);
+    background: -moz-linear-gradient(right,#3d4549,#39535f);
+    background: linear-gradient(to right,#3d4549,#39535f);
+    float: left;
+  }
+  nav .function-list{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid lightgrey;
+    position: relative;
+  }
+  nav .function-list img{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+  nav .function-list span{
+    position: absolute;
+    color: white;
+    top: 20px;
+    left: 60px;
+  }
+  nav .function-right{
+    width: 50%;
+    float: left;
+  }
 
+  /*main样式*/
 main {
   float: left;
   background-color: white; }
