@@ -53,6 +53,7 @@ nav {
     border-bottom: 1px solid grey;
     background-color: gainsboro;
 }
+
   nav .nav-list{
     width: 100%;
   }
@@ -68,6 +69,7 @@ nav {
   nav .function-list{
     width: 100%;
     height: 60px;
+    cursor: pointer;
     border-bottom: 1px solid lightgrey;
     position: relative;
   }
@@ -84,7 +86,26 @@ nav {
   }
   nav .function-right{
     width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left,#1590c4,#12b2d5);
+    background: -o-linear-gradient(right,#1590c4,#12b2d5);
+    background: -moz-linear-gradient(right,#1590c4,#12b2d5);
+    background: linear-gradient(to right,#1590c4,#12b2d5);
     float: left;
+  }
+  nav .expand-list{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid lightgrey;
+    cursor: pointer;
+    line-height: 60px;
+    position: relative;
+  }
+  nav .expand-list span{
+    color: white;
+    font-size:16px ;
+    position: absolute;
+    left: 20px;
   }
 
   /*main样式*/
@@ -92,4 +113,12 @@ main {
   float: left;
   background-color: white; }
 
+/*nav动画样式*/
+nav .function-list:hover,nav .function-list:active{
+  background: -webkit-linear-gradient(left,#0e6eb0,#1590c4);
+  background: -o-linear-gradient(right,#0e6eb0,#1590c4);
+  background: -moz-linear-gradient(right,#0e6eb0,#1590c4);
+  background: linear-gradient(to right,#0e6eb0,#1590c4);
+
+}
 
