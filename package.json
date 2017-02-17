@@ -10,10 +10,13 @@
   "author": "mofanjun",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.16.1",
     "express": "^4.14.1",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^2.2.24"
   },
   "devDependencies": {
+    "assert": "^1.4.1",
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-jshint": "^2.0.4",
