@@ -1,4 +1,8 @@
 /*header样式*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
 header {
   height: 64px;
   background-color: gainsboro;
@@ -22,16 +26,19 @@ header .header-right{
 }
 
 header ul{
+  line-height: 62px;
   list-style: none;
 }
 
 header li{
-  display: inline-block;
+  float: right;
 }
 
-header li img{
-  margin: 0 10px;
+header li a{
+  display: block;
+  padding: 0 20px;
 }
+
 header .header-2{
   width: 100%;
   height: 2px;
@@ -46,7 +53,7 @@ nav {
   width: 358px;
   float: left;
 }
-  nav .profile {
+nav .profile {
     width: 100%;
     height: 120px;
     border-right: 1px solid grey;
@@ -54,10 +61,10 @@ nav {
     background-color: gainsboro;
 }
 
-  nav .nav-list{
+nav .nav-list{
     width: 100%;
   }
-  nav .function-left{
+nav .function-left{
     height: 100%;
     width: 50%;
     background: -webkit-linear-gradient(left,#3d4549,#39535f);
@@ -66,25 +73,25 @@ nav {
     background: linear-gradient(to right,#3d4549,#39535f);
     float: left;
   }
-  nav .function-list{
+nav .function-list{
     width: 100%;
     height: 60px;
     cursor: pointer;
     border-bottom: 1px solid lightgrey;
     position: relative;
   }
-  nav .function-list img{
+nav .function-list img{
     position: absolute;
     top: 15px;
     left: 20px;
   }
-  nav .function-list span{
+nav .function-list span{
     position: absolute;
     color: white;
     top: 20px;
-    left: 60px;
+    left: 70px;
   }
-  nav .function-right{
+nav .function-right{
     width: 50%;
     height: 100%;
     background: -webkit-linear-gradient(left,#1590c4,#12b2d5);
@@ -93,7 +100,7 @@ nav {
     background: linear-gradient(to right,#1590c4,#12b2d5);
     float: left;
   }
-  nav .expand-list{
+nav .expand-list{
     width: 100%;
     height: 60px;
     border-bottom: 1px solid lightgrey;
@@ -101,14 +108,58 @@ nav {
     line-height: 60px;
     position: relative;
   }
-  nav .expand-list span{
+nav .expand-list span.module-3{
     color: white;
     font-size:16px ;
     position: absolute;
     left: 20px;
   }
+nav .expand-list span.arrow{
+    width:25px ;
+    display: block;
+    height: 60px;
+    float: right;
+  }
+nav .expand-list span.arrow.right{
+    background: url("../img/arrow-right.png")no-repeat center;
+  }
+nav .expand-list span.arrow.down{
+    background:url("../img/arrow-down.png")no-repeat center;
+  }
+nav ul{
+    list-style: none;
+  }
+nav li{
+    border-bottom: 1px solid lightgrey;
+    width: 179px;
+    height: 60px;
+    line-height: 60px;
+}
+nav li a{
+    color: white;
+    display: block;
+    height: 60px;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    background: -webkit-linear-gradient(left,#156ba0,#08a0c2);
+    background: -o-linear-gradient(right,#156ba0,#08a0c2);
+    background: -moz-linear-gradient(right,#156ba0,#08a0c2);
+    background: linear-gradient(to right,#156ba0,#08a0c2);
+}
+nav li a img{
+    position: absolute;
+    left: 20px;
+    top: 28px;
+}
+nav li a span{
+    position: absolute;
+    left: 40px;
+}
 
-  /*main样式*/
+
+
+    /*main样式*/
 main {
   float: left;
   background-color: white; }
@@ -119,6 +170,11 @@ nav .function-list:hover,nav .function-list:active{
   background: -o-linear-gradient(right,#0e6eb0,#1590c4);
   background: -moz-linear-gradient(right,#0e6eb0,#1590c4);
   background: linear-gradient(to right,#0e6eb0,#1590c4);
-
+}
+.active{
+    background: -webkit-linear-gradient(left,#0e6eb0,#1590c4);
+    background: -o-linear-gradient(right,#0e6eb0,#1590c4);
+    background: -moz-linear-gradient(right,#0e6eb0,#1590c4);
+    background: linear-gradient(to right,#0e6eb0,#1590c4);
 }
 
