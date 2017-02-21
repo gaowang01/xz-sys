@@ -17,10 +17,10 @@
             </div>
             <div class="header-right">
                 <ul>
-                    <li><img src="/img/back.png" height="21" width="20"></li>
-                    <li><img src="/img/go.png" height="21" width="21"/></li>
-                    <li><img src="/img/refresh.png" height="21" width="20"/></li>
-                    <li><img src="/img/close.png" height="21" width="20"/></li>
+                    <li><a href="javascript:"><img src="/img/close.png" height="21" width="20"/></a></li>
+                    <li><a href="javascript.window.location.reload()"><img src="/img/refresh.png" height="21" width="20"/></a></li>
+                    <li><a href="javascript.void(0)" onclick="history.forward()"><img src="/img/go.png" height="21" width="21"/></a></li>
+                    <li><a href="javascript.void(0)" onclick="history.back()"><img src="/img/back.png" height="21" width="20"></a></li>
                 </ul>
             </div>
         </div>
@@ -47,7 +47,7 @@
 
 		<div class="nav-list">
             <div class="function-left">
-                <div class="function-list">
+                <div rel="system-list" class="function-list">
                     <img src="/img/icon-1.png" height="30" width="30"/>
                     <span>系统管理</span>
                 </div>
@@ -85,21 +85,42 @@
                 </div>
             </div>
             <div class="function-right">
-                <div class="system-list">
-                    <div class="role-management expand-list">
-                        <span>角色管理</span>
+                <div class="system-list function-right-list">
+                    <div>
+                        <div class="role-management expand-list">
+                            <span class="module-3">角色管理</span>
+                            <span class="arrow right"></span>
+                        </div>
+                        <ul class="menu">
+                            <li><a href="#"><img src="/img/yd.png"><span>角色管理</span></a></li>
+                        </ul>
                     </div>
-                    <div class="module-management expand-list">
-                        <span>模块管理</span>
+                    <div>
+                        <div class="module-management expand-list">
+                            <span class="module-3">模块管理</span>
+                            <span class="arrow right"></span>
+                        </div>
                     </div>
-                    <div class="announcement-management expand-list">
-                        <span>系统公告管理</span>
+                    <div>
+                        <div class="announcement-management expand-list">
+                            <span class="module-3">系统公告管理</span>
+                            <span class="arrow right"></span>
+                        </div>
                     </div>
-                    <div class="operating-records-management expand-list">
-                        <span>操作记录管理</span>
+                    <div>
+                        <div class="operating-records-management expand-list">
+                            <span class="module-3">操作记录管理</span>
+                            <span class="arrow right"></span>
+                        </div>
+                        <ul class="menu">
+                            <li><a href="#"><img src="/img/yd.png"><span>操作记录管理</span></a></li>
+                        </ul>
                     </div>
-                    <div class="document-management expand-list">
-                        <span>文档管理</span>
+                    <div>
+                        <div class="document-management expand-list">
+                            <span class="module-3">文档管理</span>
+                            <span class="arrow right"></span>
+                        </div>
                     </div>
                 </div>
                 <div></div>
@@ -123,6 +144,7 @@
 	{{! self script}}
 	<script type="text/javascript" src="/script/layoutHelper.js"></script>
 	<script type="text/javascript" src="/script/main.js"></script>
+    <script type="text/javascript" src="/script/nav.js"></script>
 </body>
 </html>
 
